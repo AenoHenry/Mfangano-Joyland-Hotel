@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyland Hotel</title>
+    <link rel="icon" href="favicon_64x64.png" type="image/png">
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header, footer { background: #036dd6; color: white; text-align: center; padding: 15px; }
+        nav a { color: white; margin: 10px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 20px; }
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 10px; text-align: left; }
+        img { width: 300px; border-radius: 10px; margin: 5px; }
+        video { width: 640px; height: 360px; border-radius: 10px; margin-top: 15px; }
+        form input[type="text"], form input[type="email"] { width: 100%; padding: 8px; margin-top: 5px; }
+        form input[type="submit"] { background-color: #2372d8; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; }
+        form input[type="submit"]:hover { background-color: #34495e; }
+        fieldset { padding: 15px; border-radius: 8px; }
+        h3, h2, h1 { text-align: center; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Joyland Hotel</h1>
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#booking">Booking</a>
+        <a href="#contacts">Contacts</a>
+    </nav>
+</header>
+
+<section id="gallery">
+    <h3>Hotel Gallery</h3>
+    <div style="text-align:center;">
+            <img src="images/image (1).jpg" alt="image (1)" width="300" height="200">
+    <img src="images/image (2).jpg" alt="image (2)" width="300" height="200">
+<img src="images/image (3).jpg" alt="image (3)" width="300" height="200">
+<img src="images/image (4).jpg" alt="image (4)" width="300" height="200">
+
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Joyland Hotel – your comfort is our priority.</p>
+    <div style="text-align:center;">
+        <video controls>
+            <source src="DemoClip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section id="amenities">
+    <h2>Amenities and Services</h2>
+    <ul>
+        <li>Swimming pool</li>
+        <li>Gym</li>
+        <li>Photography</li>
+        <li>Conference rooms</li>
+        <li>Playground</li>
+        <li>Free Wi-Fi</li>
+        <li>Boat rides</li>
+    </ul>
+</section>
+
+<section id="rooms">
+    <h2>Our Rooms</h2>
+    <ul>
+        <li>Standard Room</li>
+        <li>Middle Class Room</li>
+        <li>Executive Suite</li>
+    </ul>
+
+    <h3>Room Prices</h3>
+    <table>
+        <tr>
+            <th>Room Type</th>
+            <th>Price per Night</th>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td>500 Ksh</td>
+        </tr>
+        <tr>
+            <td>Deluxe</td>
+            <td>1,000 Ksh</td>
+        </tr>
+        <tr>
+            <td>Suite</td>
+            <td>2,000 Ksh</td>
+        </tr>
+    </table>
+</section>
+
+<section id="booking">
+    <h2>Book a Room</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <p>Room Type:</p>
+            <input type="radio" name="room" value="Standard" required> Standard<br>
+            <input type="radio" name="room" value="Deluxe"> Deluxe<br>
+            <input type="radio" name="room" value="Suite"> Suite
+        </fieldset>
+        <br>
+        <input type="submit" value="Book Now">
+    </form>
+</section>
+
+<section id="contacts" class="contact-section">
+    <h2>Contact & Location</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><strong>📍 Address:</strong> HomaBay-Mfangano Island, Kenya</p>
+            <p><strong>📞 Phone:</strong> <a href="tel:+254728019450">+254 728019450</a></p>
+            <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/254757201254" target="_blank">+254 757201254</a></p>
+            <p><strong>📧 Email:</strong> info@joylandhotel.com</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Joyland Hotel</p>
+</footer>
+
+</body>
+</html>
